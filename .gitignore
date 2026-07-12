@@ -1,0 +1,17 @@
+# Lingkungan & Sistem
+.venv/
+.env
+__pycache__/
+.DS_Store
+
+# folder data
+/data
+/foto
+/schedule
+
+# Hasil Ekspor (Excel)
+*.xlsx
+
+# Folder Cache/Logs
+.chainlit/
+logs/
