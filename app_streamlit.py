@@ -1,9 +1,18 @@
 import streamlit as st
 import pandas as pd
 import os
+import sys
+
+# Menambahkan root directory ke sys.path secara paksa
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
+
 from src.rag_core import query_hybrid_data
 from src.vlm_analyzer import analyze_construction_photo
 from src.database import get_db
+
+
 
 # Konfigurasi Page
 st.set_page_config(page_title="Archi AI", layout="centered")
