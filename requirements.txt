@@ -12,7 +12,7 @@ pypdf
 pillow
 opencv-contrib-python
 python-dotenv
-torch
 transformers
-torchvision
 pymupdf
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
